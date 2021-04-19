@@ -13,10 +13,20 @@
     </script>
         <style>
             :root {
-                --Background: rgb(0, 137, 250); /*От тук се сменя цвета на фона*/
-                --Color1: white; /*От тук се сменя цвета на текста в началото на анимацията*/
-                --Color2: rgb(255, 5, 5); /*От тук се сменя цвета на текста в края на анимацията*/
+                --Background: white; /*От тук се сменя цвета на фона*/
+                --Color1: orange; /*От тук се сменя цвета на текста в началото на анимацията*/
+                --Color2: purple;
                 /*За да премахнете ефекта настройте еднакъв цвят*/
+				--Color3: red;
+				--Color4: CadetBlue;
+				--Color5: yellow;
+				--Color6: coral;
+				--Color7: green;
+				--Color8: cyan;
+				--Color9: DeepPink;
+				--Color10: DodgerBlue;
+				--Color11: orange; /*Оттук се сменя цвета на текста в края на анимацията*/
+				/*За да премахнете ефекта настройте еднакъв цвят или изтрийте всичко от Color2 до Color 10*/
                 --position-top: 5%; /*От тук се наглася оттстоянието от горната част на екрана*/
                 --position-right: 2%; /*От тук се наглася оттстоянието от дясната част на екрана*/
             }
@@ -24,8 +34,8 @@
     <style>
         #watch {
             position: fixed;
-            top: var(--position-top);
-            right: var(--position-right);
+            top: 605px;
+            right: 10px;
             width: 10em;
             padding-left: 0.5em;
             padding-right: auto;
@@ -33,21 +43,45 @@
             min-height: 20px;
             background-color: var(--Background);
             color: var(--Color1);
-            border-radius: 10px;
-            box-shadow: 1px 1px 1px 2px grey;
+			border-radius: 10px;
+			border: 2px solid;
             animation: wavy;
-            animation-duration: 3s;
+            animation-duration: 5s;
             animation-iteration-count: infinite;
         }
         @keyframes wavy {
             0% {
                 color: var(--Color1);
             }
-            50% {
+            10% {
                 color: var(--Color2);
             }
-            100% {
-                color: var(--Color1);
+            20% {
+                color: var(--Color3);
+            }
+			30% {
+                color: var(--Color4);
+            }
+			40% {
+                color: var(--Color5);
+            }
+			50% {
+                color: var(--Color6);
+            }
+			60% {
+                color: var(--Color7);
+            }
+			70% {
+                color: var(--Color8);
+            }
+			80% {
+                color: var(--Color9);
+            }
+			90% {
+                color: var(--Color10);
+            }
+			100% {
+                color: var(--Color11);
             }
         }
         
